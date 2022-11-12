@@ -58,7 +58,7 @@ with open(poll_csv) as csvfile:
     winning_candidate = candidate_name[index]   #retrieves the index (essentially, the candidate name) that corresponds with the highest vote total
                                                 #https://towardsdatascience.com/the-basics-of-indexing-and-slicing-python-lists-2d12c90a94cf 
 
-# #verify your results # toggle "commonet mode" on/off to view the results
+# #verify your results # toggle "comment mode" on/off to view the results
 # print(total_votes)
 # print('%.3f' % percentage) #format as % to 3 decimal places (https://www.adamsmith.haus/python/answers/how-to-format-a-number-as-a-percentage-in-python)
 # print(candidates)
