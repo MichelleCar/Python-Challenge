@@ -1,6 +1,6 @@
 # Python...here we come!
 
-/Users/michelle.carvalho/Dropbox/Mac/Desktop/Data_Analytics_Bootcamp/Challenge Assignments/Python-Challenge/images/1_9Yl5cX0C2p1rLZzdq-bwaQ.png
+![1_9Yl5cX0C2p1rLZzdq-bwaQ](https://user-images.githubusercontent.com/115101031/201499189-e2a30f97-a10f-4d77-9d1d-b20df82cdf92.png)
 
 ## Why Python?
 
@@ -51,7 +51,7 @@ The functionality of Python (through VS Code interface and Git) allows for learn
 * Overcoming challenges and difficulties encountered, and researching best practices by accessing a huge community online.  This was particularly key when addressing errors in my code.
 * Learning Python, reviewing the code, building an error-free, readable, reusable, and efficient script for analysis, while maintaining an open and creative approach to reviewing data.  I continue to push myself to write code always looking for the loophole (ie. lloking for the ways my coding might fail).
 
-/Users/michelle.carvalho/Dropbox/Mac/Desktop/Data_Analytics_Bootcamp/Challenge Assignments/Python-Challenge/images/78cbfc3917d9bf65e65d46f84128a2e1.jpeg
+![78cbfc3917d9bf65e65d46f84128a2e1](https://user-images.githubusercontent.com/115101031/201499198-a127d470-53ee-45f1-9305-b4f8c2e96cfe.jpeg)
 
 ## Observations during coding
 
@@ -60,7 +60,7 @@ Both projects were very different, but each started with similar questions
 * Decide what data needed to be collected
 * Make coding decisions: 
     * Indexing was essential, therefore using lists (instead of dictionaries) to collect data for the purposes of the project (there is a crucial difference between List and Dictionary in Python.)
-            /Users/michelle.carvalho/Dropbox/Mac/Desktop/Data_Analytics_Bootcamp/Challenge Assignments/Python-Challenge/images/Difference BTWN Lists & Dictionaries.jpg
+            ![Difference BTWN Lists   Dictionaries](https://user-images.githubusercontent.com/115101031/201499210-d1a398e0-76ba-458b-bf36-57633b4a3cfa.jpg)
             
     * Make it readable: ensure that when sharing the code, others could understand it
     * Make it reusable: while designed with this data set in mind, it can be used with any size of data set, and in additional contexts.  For example, looking at sales projections by month to determine prime profit period; while the election date was limited to county elections, it can be used for larger elections (ie. provincial).  With minimal effort the code could be easily expanded to include more depth in the data collected.
