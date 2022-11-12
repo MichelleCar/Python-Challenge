@@ -40,9 +40,9 @@ with open(budget_csv) as csvfile:
 
     # to check if the lists are complete, toggle the "print" functions below from "comment" mode
     # print(month_year)
-    # print(len(month_year))    # Total # of months (toggle "commonet mode" on/off to view the result) (verification)
+    # print(len(month_year))    # Total # of months (toggle "comment mode" on/off to view the result) (verification)
     # print(profits_loses)
-    # print(sum(profits_loses)) # Total amount of profits/losses) (toggle "commonet mode" on/off to view the result) (verification)
+    # print(sum(profits_loses)) # Total amount of profits/losses) (toggle "comment mode" on/off to view the result) (verification)
    
     #To populate/append the "profits_changes" list, we will calculate the difference between each month 
     for index in range(len(profits_loses)-1):    #"for index in range(len(a_list)):" is a recommended for working with indexes
@@ -50,20 +50,20 @@ with open(budget_csv) as csvfile:
                                                  #after getting "list index out of range" error, I realized the issue was related with
                                                  #using the last index. The addition "-1" resolved the issue. 
                                                  ##https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/
-        # print(index)      # toggle "commonet mode" on/off to view the index (verification)
+        # print(index)      # toggle "comment mode" on/off to view the index (verification)
         profit_changes.append(profits_loses[index+1] - profits_loses[index])
         
-    # print(profit_changes)  # toggle "commonet mode" on/off to view the results (verification)
+    # print(profit_changes)  # toggle "comment mode" on/off to view the results (verification)
     # print(round(sum(profit_changes)/len(profit_changes),2))   # Average change for all profits/losses (toggle "commonet mode" on/off to view the results) (verification)
 
     greatest_increase = max(profit_changes)     #instructs to find the max increase from one month to another
     greatest_increase_month = profit_changes.index(max(profit_changes))+1   #The month where the greates increase occurred is at "index+1"
     greatest_decrease = min(profit_changes)     #instructs to find the max increase from one month to another
     greatest_decrease_month = profit_changes.index(min(profit_changes))+1   #The month where the greates decrease occurred is at "index+1"
-    # print(greatest_increase)        # toggle "commonet mode" on/off to view the result (verification)
-    # print(greatest_decrease)        # toggle "commonet mode" on/off to view the result (verification)
-    # print(month_year[greatest_increase_month])    # toggle "commonet mode" on/off to view the result (verification)
-    # print(month_year[greatest_decrease_month])    # toggle "commonet mode" on/off to view the result (verification)
+    # print(greatest_increase)        # toggle "comment mode" on/off to view the result (verification)
+    # print(greatest_decrease)        # toggle "comment mode" on/off to view the result (verification)
+    # print(month_year[greatest_increase_month])    # toggle "comment mode" on/off to view the result (verification)
+    # print(month_year[greatest_decrease_month])    # toggle "comment mode" on/off to view the result (verification)
 
 #4)Write the results to a text file
 output_path = os.path.join("PyBank",'Analysis', 'Financial_Analysis.txt')
