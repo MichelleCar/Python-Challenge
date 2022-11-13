@@ -1,7 +1,7 @@
 # Python...here we come!
 
 ![1_9Yl5cX0C2p1rLZzdq-bwaQ](https://user-images.githubusercontent.com/115101031/201499189-e2a30f97-a10f-4d77-9d1d-b20df82cdf92.png)
-####source: https://medium.com/codex/how-to-improve-your-coding-style-and-documentation-with-python-programming-language-d2bb0ad0fedb 
+source: https://medium.com/codex/how-to-improve-your-coding-style-and-documentation-with-python-programming-language-d2bb0ad0fedb 
 
 ## Why Python?
 
@@ -53,6 +53,7 @@ The functionality of Python (through VS Code interface and Git) allows for learn
 * Learning Python, reviewing the code, building an error-free, readable, reusable, and efficient script for analysis, while maintaining an open and creative approach to reviewing data.  I continue to push myself to write code always looking for the loophole (ie. lloking for the ways my coding might fail).
 
 ![78cbfc3917d9bf65e65d46f84128a2e1](https://user-images.githubusercontent.com/115101031/201499198-a127d470-53ee-45f1-9305-b4f8c2e96cfe.jpeg)
+source:https://www.amazon.com/gp/product/1652421963/
 
 ## Observations during coding
 
@@ -62,6 +63,7 @@ Both projects were very different, but each started with similar questions
 * Make coding decisions: 
     * Indexing was essential, therefore using lists (instead of dictionaries) to collect data for the purposes of the project (there is a crucial difference between List and Dictionary in Python.)
             ![Difference BTWN Lists   Dictionaries](https://user-images.githubusercontent.com/115101031/201499210-d1a398e0-76ba-458b-bf36-57633b4a3cfa.jpg)
+            source: https://byjus.com/gate/difference-between-list-and-dictionary-in-python/
             
     * Make it readable: ensure that when sharing the code, others could understand it
     * Make it reusable: while designed with this data set in mind, it can be used with any size of data set, and in additional contexts.  For example, looking at sales projections by month to determine prime profit period; while the election date was limited to county elections, it can be used for larger elections (ie. provincial).  With minimal effort the code could be easily expanded to include more depth in the data collected.
