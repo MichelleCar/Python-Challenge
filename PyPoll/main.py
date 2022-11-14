@@ -17,7 +17,7 @@ percentage_votes = [] #this list will hold the percentage of votes for each cand
 #just as with any running tally, you need a starting point
 total_votes = 0
 
-# #3)Read the data using the CSV module and generate content for your output file
+#3)Read the data using the CSV module and generate content for your output file
 with open(poll_csv) as csvfile:
 
     #CSV reader specifies a delimiter and variable that holds the contents of the file
@@ -28,31 +28,28 @@ with open(poll_csv) as csvfile:
 
     #Read the header row first 
     csv_header = next(csvreader)
-    # print(f"CSV Header: {csv_header}")
+    # print(f"CSV Header: {csv_header}") # toggle "commonet mode" on/off to view the data in the table (verification)
 
     #Read each row of data after the header using a for loop that reads through each row of the data
     for row in csvreader:
-        # print(row)    # toggle "commonet mode" on/off to view the data in the table (verification)
-
         total_votes = total_votes + 1   #increases the TOTAL vote counter by 1 as it runs through the first row
-                                        #Eachiteration will add additional votes for every entry in the csv
-                                        #This was a better option than creating another list for the sole purpose of counting the # of rows
-                                        #This is much more efficient
+                                        #Each iteration will add additional votes for every entry in the csv
+                                        #This was much more efficient than creating another list for the sole purpose of counting the # of rows
         if row[2] not in candidate_name:  #will add candidate's names to the empty list...candidate name is in the third column of the CSV (column index = 2)
-            candidate_name.append(row[2]) #add candidate name to the list
-            index = candidate_name.index(row[2])  #finds and returns the index of the element in the list
+            candidate_name.append(row[2]) #add candidate name to the list created earlier
+            index = candidate_name.index(row[2])  #finds and returns the index of the element in the list (will be used to later match results)
             candidate_votes.append(1) #add one vote to that candidate
         else:                                   #if the name already exists in the list
             index = candidate_name.index(row[2])    #finds the index of the candidate
             candidate_votes[index] = candidate_votes[index] + 1  #add another vote to the candidates votes
 
     #Once votes are tallied, calculate and add percentage for each candidate of the total vote
-    for votes in candidate_votes: #will create a percentage of total votes for each candidate, aligning indexes
+    for votes in candidate_votes: #for the votes accrued by each candidate...
             percentage = ((votes/total_votes)*100) #calculate percentages ([candidate total votes ÷ total votes for all candidate] x 100)
             percentage = '%.3f' % percentage #formats percentage to 3 decimal places (https://stackoverflow.com/questions/51328193/understanding-the-print-format-3-in-python)
-            percentage_votes.append(percentage) #add result to list
+            percentage_votes.append(percentage) #add result to list created earlier
 
-    #Gather final winning candidate
+    #Evaluate final winning candidate
     winner = max(candidate_votes) #finds the maximum vote count by candidate
     index = candidate_votes.index(winner)   #finds the index of the candidate with the highest vote total
     winning_candidate = candidate_name[index]   #retrieves the index (essentially, the candidate name) that corresponds with the highest vote total
@@ -65,7 +62,7 @@ with open(poll_csv) as csvfile:
 # print(winning_candidate)
 
 
-# #4)Write the results to a text file
+#4)Write the results to a text file
 output_path = os.path.join('PyPoll','Analysis','Election_Results.txt')
 
 #\n is the same as hitting return on your keyboard (otherwise it will write in one continuous sentence)
