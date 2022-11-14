@@ -49,9 +49,9 @@ with open(budget_csv) as csvfile:
                                                  #https://www.adamsmith.haus/python/answers/how-to-use-range(len())-in-python
                                                  #after getting "list index out of range" error, I realized the issue was related with
                                                  #using the last index. The addition "-1" resolved the issue. 
-                                                 ##https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/
+                                                 #https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/
         # print(index)      # toggle "comment mode" on/off to view the index (verification)
-        profit_changes.append(profits_loses[index+1] - profits_loses[index])
+        profit_changes.append(profits_loses[index+1] - profits_loses[index])   #calculates the difference between the proceeding month and the current month 
         
     # print(profit_changes)  # toggle "comment mode" on/off to view the results (verification)
     # print(round(sum(profit_changes)/len(profit_changes),2))   # Average change for all profits/losses (toggle "commonet mode" on/off to view the results) (verification)
