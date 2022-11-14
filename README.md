@@ -5,7 +5,7 @@ source: https://medium.com/codex/how-to-improve-your-coding-style-and-documentat
 
 ## Why Python?
 
-Python is among the most popular programming languages in the world. As a general purpose language, Python is ideally designed and has applications across a wide range of applications, including data science, software and web development, automation, and generally getting stuff done.
+Python is among the most popular programming languages in the world. As a general purpose language, Python is ideally designed and has applications across a wide range of applications, including data science, software and web development, and automation.
 
 As a tool for complex data analytics, Python can be used to solve a range of problems across many fields, from finance to scientific research. Python allows data analysts to use the language to conduct complex statistical calculations, create data visualizations, build machine learning algorithms, manipulate and analyze data, and complete other data-related tasks.
 
